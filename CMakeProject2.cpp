@@ -24,7 +24,7 @@ public:
 
 int main() {
     // Crear objetos de la clase Persona
-    Persona persona1("Juan Perez", 30, "Calle Falsa 123");
+    Persona persona1("Juan Lopez", 30, "Calle Falsa 123");
     Persona persona2("Maria Garcia", 25, "Avenida Siempre Viva 456");
 
     // Mostrar la información de cada persona
