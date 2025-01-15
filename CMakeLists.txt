@@ -1,4 +1,4 @@
-﻿# CMakeList.txt: proyecto de CMake para CMakeProject2, incluya el origen y defina
+﻿# CMakeList.txt: proyecto de CMake para Hospital Jaime, incluya el origen y defina
 # la lógica específica del proyecto aquí.
 #
 cmake_minimum_required (VERSION 3.8)
@@ -9,13 +9,13 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("CMakeProject2")
+project ("Hospital Jaime")
 
 # Agregue un origen al ejecutable de este proyecto.
-add_executable (CMakeProject2 "CMakeProject2.cpp" "CMakeProject2.h")
+add_executable (CMakeTarget "Hospital Jaime.cpp" "Hospital Jaime.h" "Medico.cpp" "Medico.h" "Paciente.cpp" "Paciente.h" "Cita.cpp" "Cita.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET CMakeProject2 PROPERTY CXX_STANDARD 20)
+  set_property(TARGET CMakeTarget PROPERTY CXX_STANDARD 20)
 endif()
 
 # TODO: Agregue pruebas y destinos de instalación si es necesario.
